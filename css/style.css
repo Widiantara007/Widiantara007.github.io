@@ -5,6 +5,7 @@
     --grey : #b3b3b3;
     --light: #F6F7F8;
     --dark: #1A2A36;
+    --black : #000000;
 }
 
 .fw-medium {
@@ -698,3 +699,22 @@
     .cutoff-text:has(+ .expand-btn:checked){
         max-height: none;
     }
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--black);
+    overflow: hidden;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: var(--secondary);
+    text-align: center;
+    padding: 14px 16px;
+   
+  }
